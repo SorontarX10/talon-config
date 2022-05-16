@@ -10,6 +10,7 @@ triple quote: "'''"
 ellipses: "..."
 (comma and | spamma): ", "
 plus: "+"
+slash: "/"
 arrow: "->"
 dub arrow: "=>"
 new line: "\\n"
@@ -18,15 +19,14 @@ line feed: "\\r\\n"
 big: " > "
 bigish: " >= "
 small: " < "
-typer: "<"
 smallish: " <= "
+typer: "<"
+see typer: ">"
 exact: " == "
 be: " = "
 let: "let "
 binand: " && "
 binor: " || "
-together: " and "
-one of: " or "
 else: "else "
 if: "if "
 claren: ")"
@@ -50,6 +50,9 @@ winnext:
 # alphabet
 pita: "p"
 
+// terminal
+new file: "touch "
+
 # python
 key for <user.text>:
     "for "
@@ -67,6 +70,14 @@ printer:
     "print()"
     key(left)
 run charm: key(ctrl-shift-r)
+together: " and "
+one of: " or "
+django: "django"
+inside: "in "
+
+prophet:
+    key(shift)
+    key(shift)
 
 # files
 save file: key(cmd-s)
@@ -135,26 +146,26 @@ empty escaped string:
     key(left)
     key(left)
 (inside parens | args):
-	insert("()")
-	key(left)
+    insert("()")
+    key(left)
 inside (squares | square brackets | list):
-	insert("[]")
-	key(left)
+    insert("[]")
+    key(left)
 inside (bracket | braces):
-	insert("{}")
-	key(left)
+    insert("{}")
+    key(left)
 inside percent:
-	insert("%%")
-	key(left)
+    insert("%%")
+    key(left)
 inside (quotes | string):
-	insert("''")
-	key(left)
+    insert("''")
+    key(left)
 inside (double quotes | dubquotes):
     insert('""')
-	key(left)
+    key(left)
 inside (graves | back ticks):
-	insert("``")
-	key(left)
+    insert("``")
+    key(left)
 angle that:
     text = edit.selected_text()
     user.paste("<{text}>")
