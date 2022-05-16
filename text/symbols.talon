@@ -103,10 +103,7 @@ git add now:
 git diff now:
     "git diff"
     key(enter)
-git commit <user.text>:
-    "commit -m '"
-    user.text
-    "'"
+git commit now: 'git commit -m "'
 git push master:
     "git push -u origin master"
     key(enter)
