@@ -81,6 +81,48 @@ lefty:
 righty:
     key(right)
 
+# shortcuts
+my mail: "mateusz.kostrzewa@allegro.pl"
+
+# browser
+clear cookies: key(cmd-shift-bksp)
+close card: key(cmd-w)
+reopen: key(cmd-shift-t)
+hard refresh: key(cmd-shift-r)
+new card: key(cmd-t)
+new incognito: key(cmd-shift-n)
+
+# google sheets
+paste format: key(cmd-alt-v)
+paste values: key(cmd-shift-v)
+
+# git
+git add now:
+    "git add ."
+    key(enter)
+git diff now:
+    "git diff"
+    key(enter)
+git commit <user.text>:
+    "commit -m '"
+    user.text
+    "'"
+git push master:
+    "git push -u origin master"
+    key(enter)
+git push main:
+    "git push -u origin main"
+    key(enter)
+
+# terminal
+location:
+    "pwd"
+    key(enter)
+show files:
+    "ls"
+    key(enter)
+see dee: "cd "
+
 empty dubstring:
     '""'
     key(left)
