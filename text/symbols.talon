@@ -74,6 +74,8 @@ together: " and "
 one of: " or "
 django: "django"
 inside: "in "
+tensorflow: "tensorflow"
+tensor short: "tf"
 
 prophet:
     key(shift)
@@ -94,6 +96,7 @@ righty:
 
 # shortcuts
 my mail: "mateusz.kostrzewa@allegro.pl"
+block mac: key(ctrl-cmd-q)
 
 # browser
 clear cookies: key(cmd-shift-bksp)
